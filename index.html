@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <script
+      src="https://kit.fontawesome.com/766f32d788.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="toggle-switch">
+        <!--- Light mode button --->
+        <button
+          class="color-mode__btn light--hidden"
+          aria-label="Toggle light mode"
+        >
+          Toggle Light Mode
+          <svg aria-hidden="true">
+            <use href="#sun"></use>
+          </svg>
+        </button>
+
+        <!--- Dark mode button --->
+        <button
+          class="color-mode__btn dark--hidden"
+          aria-label="Toggle dark mode"
+        >
+          Toggle Dark Mode
+          <svg aria-hidden="true">
+            <use href="#moon"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="calculator-grid">
+      <!--- Output Screen --->
+      <div class="output">
+        <div class="previous-operand"></div>
+        <div class="current-operand"></div>
+      </div>
+
+      <!--- Number/operand buttons --->
+      <button class="span-two">AC</button>
+      <button>C</button>
+      <button>÷</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>*</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button class="span-two">=</button>
+    </div>
+
+    <footer>
+      <div class="footer-heading">
+        <h1>Connect with me!</h1>
+      </div>
+      <div class="footer-icons">
+        <!--- Social media icons w/ links --->
+        <a href="https://github.com/Count-MonteCristo"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/luisnavarrobarrera/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/KaisarionCodes"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
