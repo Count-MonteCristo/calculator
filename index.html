@@ -10,84 +10,50 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <script
-      src="https://kit.fontawesome.com/766f32d788.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div class="toggle-switch">
-        <!--- Light mode button --->
-        <button
-          class="color-mode__btn light--hidden"
-          aria-label="Toggle light mode"
-        >
-          Toggle Light Mode
-          <svg aria-hidden="true">
-            <use href="#sun"></use>
-          </svg>
-        </button>
-
-        <!--- Dark mode button --->
-        <button
-          class="color-mode__btn dark--hidden"
-          aria-label="Toggle dark mode"
-        >
-          Toggle Dark Mode
-          <svg aria-hidden="true">
-            <use href="#moon"></use>
-          </svg>
-        </button>
+    <div class="left-side">
+      <div class="title">
+        <h1>4-Function Calculator</h1>
       </div>
-    </header>
-
-    <div class="calculator-grid">
-      <!--- Output Screen --->
-      <div class="output">
-        <div class="previous-operand"></div>
-        <div class="current-operand"></div>
+      <div class="description">
+        <p>
+          This is a simple calculator built with HTML, CSS, and JavaScript.<br />
+          Created by Luis Navarro.
+        </p>
       </div>
 
-      <!--- Number/operand buttons --->
-      <button class="span-two">AC</button>
-      <button>C</button>
-      <button>÷</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>+</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>-</button>
-      <button>.</button>
-      <button>0</button>
-      <button class="span-two">=</button>
+      <div class="right-side">
+        <div class="calculator-grid">
+          <!--- Output Screen --->
+          <div class="output">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+          </div>
+
+          <!--- Number/operand buttons --->
+          <button class="span-two" id="red-button">AC</button>
+          <button id="red-button">C</button>
+          <button id="green-button">÷</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button id="green-button">*</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button id="green-button">+</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button id="green-button">-</button>
+          <button>.</button>
+          <button>0</button>
+          <button class="span-two" id="equal-button">=</button>
+        </div>
+      </div>
     </div>
-
-    <footer>
-      <div class="footer-heading">
-        <h1>Connect with me!</h1>
-      </div>
-      <div class="footer-icons">
-        <!--- Social media icons w/ links --->
-        <a href="https://github.com/Count-MonteCristo"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/luisnavarrobarrera/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://twitter.com/KaisarionCodes"
-          ><i class="fa-brands fa-square-twitter"></i
-        ></a>
-      </div>
-    </footer>
   </body>
 </html>
