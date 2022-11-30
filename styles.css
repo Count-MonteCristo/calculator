@@ -1,3 +1,4 @@
+/* Color palette */
 :root {
   --dark: #0d0d0d;
   --red: #993434;
@@ -5,6 +6,7 @@
   --orange: #b4792b;
 }
 
+/* Global settings */
 *,
 *::before,
 *::after {
@@ -13,11 +15,13 @@
   font-weight: normal;
 }
 
+/* Shared CSS between Title and Description */
 .title,
 .description {
   text-align: center;
 }
 
+/* Title */
 .title {
   padding-top: 1rem;
   color: var(--orange);
@@ -25,26 +29,31 @@
   font-weight: bold;
 }
 
+/* Description */
 .description {
   padding-bottom: 2rem;
   line-height: 3rem;
   color: #c6cacc;
 }
 
+/* removes padding and margins, applies a background */
 body {
   padding: 0;
   margin: 0;
   background-color: var(--dark);
 }
 
+/* Organizes buttons and elements */
 .calculator-grid {
   display: grid;
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  padding-bottom: 20px;
 }
 
+/* Visual look of buttons */
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
@@ -57,14 +66,17 @@ body {
   margin: 5px;
 }
 
+/* Hover color of buttons */
 .calculator-grid > button:hover {
   background-color: #c2cace70;
 }
 
+/* Defines the span of the all clear and equals buttons */
 .span-two {
   grid-column: span 2;
 }
 
+/* Visual look of the output screen */
 .output {
   grid-column: 1 / -1;
   background-color: var(--dark);
@@ -81,24 +93,29 @@ body {
   word-break: break-all;
 }
 
+/* Visual look of the previous operand */
 .output .previous-operand {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
 }
 
+/* Visual look of the current operand */
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
 }
 
+/* Defines font color for the all clear and delete buttons */
 #red-button {
   color: var(--red);
 }
 
+/* Defines font color for operation buttons */
 #green-button {
   color: var(--green);
 }
 
+/* Adds a background to the equals button */
 #equal-button {
   background-color: var(--green);
 }
